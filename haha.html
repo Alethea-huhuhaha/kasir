@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hihi.css">
+    <title>Warung Bambang</title>
+</head>
+<body>
+    <div class="sidebar">
+        <!--Logo aja si hehe-->
+        <h1 class="logo">Warung Bambang</h1>
+
+        <!--Menu list-->
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notifications</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Chatbubbles</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+        </div>
+        <!--logout-->
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+
+    <!--lapisan gelap saat menu mobile terbuka-->
+    <div class="overlay" id="overlay"></div>
+
+    <!--main-->
+    <div class="main">
+        <!--main navbar-->
+        <div class="main-navbar">
+            <!--menu when oppear on mobile version-->
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <!--Search bar-->
+            <div class="search">
+                <input type="text" placeholder="Nak Santap Ape oi">
+                <button class="search-btn">Search</button>
+            </div>
+            <!--profile icon on left side of navbar-->
+            <div class="profile">
+                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+        <!--main highlight-->
+        <div class="main-highlight">
+            <!--title section and arrow-->
+            <div class="main-header">
+                <h2 class="main-title">Recomendation</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <!--highlight menu-->
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="saya.jpg">
+                    <div class="highlight-desc">
+                        <h4>Mie Ayam Enak</h4>
+                        <p>Rp.10.00</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="hahaha.jpg">
+                    <div class="highlight-desc">
+                        <h4>Es Teh Manis</h4>
+                        <p>Rp.5.000</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="yaaa.jpeg">
+                    <div class="highlight-desc">
+                        <h4>Mie Jebeww</h4>
+                        <p>Rp.10.000</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="huhaha.jpg">
+                    <div class="highlight-desc">
+                        <h4>Es Marimas</h4>
+                        <p>Rp.2.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main menu / order-->
+        <div class="main-menus">
+            <!--filter section-->
+            <div class="main-filter">
+                
+                <div>
+                    <h2 class="main-title">Menu <br>Category</h2>
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>All Menu</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Burger</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pizza-outline"></ion-icon>
+                        </div>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="wine-outline"></ion-icon>
+                        </div>
+                        <p>wine</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Ice Cream</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Coffee</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>fish</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="nutrition-outline"></ion-icon>
+                        </div>
+                        <p>Healthy</p>
+                    </div>
+                </div>       
+            </div>
+            <hr class="divider">
+            <!---list menu jirrr-->
+            <div class="main-detail">
+                <h2 class="main-title">Choose Order</h2>
+                    <div class="detail-wrapper">
+                    <!-- Kartu 1 -->
+                    <div class="detail-card">
+                        <img class="detail-img" src="Mie nyemek teteh.jpg" alt="Mie Gacoan">
+                        <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Mie Nyemek</h4>
+                            <p class="detail-sub">lorem ipsum dolor sit amet</p>
+                            <p class="detail-price">Rp.15.000</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div> 
+                </div>
+
+                    <!-- Kartu 2 -->
+                    <div class="detail-card">
+                        <img class="detail-img" src="Qtie.jpg" alt="Mie Gacoan">
+                        <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Mie Gacoan</h4>
+                            <p class="detail-sub">lorem ipsum dolor sit amet</p>
+                            <p class="detail-price">Rp.10.000</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+
+                    <!-- Kartu 3 -->
+                    <div class="detail-card">
+                        <img class="detail-img" src="Qtie.jpg" alt="Paan aja">
+                        <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Paan aja</h4>
+                            <p class="detail-sub">lorem ipsum dolor sit amet</p>
+                            <p class="detail-price">Rp.80.000</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                        <img class="detail-img" src="Qtie.jpg" alt="Menu Baru">
+                        <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Menu Baru</h4>
+                            <p class="detail-sub">lorem ipsum dolor sit amet</p>
+                            <p class="detail-price">Rp.15.000</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                        <img class="detail-img" src="Qtie.jpg" alt="Menu Baru">
+                        <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Menu Baru</h4>
+                            <p class="detail-sub">lorem ipsum dolor sit amet</p>
+                            <p class="detail-price">Rp.15.000</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                        <img class="detail-img" src="Qtie.jpg" alt="Menu Baru">
+                        <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Menu Baru</h4>
+                            <p class="detail-sub">lorem ipsum dolor sit amet</p>
+                            <p class="detail-price">Rp.15.000</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                
+                
+</div>
+</div>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('overlay');
+        const menuToggle = document.querySelector('.menu-toggle');
+
+        function bukaMenu() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function tutupMenu() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', () => {
+            if (sidebar.classList.contains('active')) {
+                tutupMenu();
+            } else {
+                bukaMenu();
+            }
+        });
+
+        overlay.addEventListener('click', tutupMenu);
+
+        // Tutup menu saat link diklik (khusus mobile)
+        document.querySelectorAll('.sidebar a').forEach(link => {
+            link.addEventListener('click', tutupMenu);
+        });
+
+        // Tutup menu kalau layar dibesarkan lagi
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) tutupMenu();
+        });
+
+        // Efek pilih kategori
+        document.querySelectorAll('.filter-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelector('.filter-card.active')?.classList.remove('active');
+                card.classList.add('active');
+            });
+        });
+
+        // Tombol panah untuk geser kartu
+        function pasangPanah(tombolBack, tombolNext, wrapper) {
+            const wadah = document.querySelector(wrapper);
+            if (!wadah) return;
+            document.querySelector(tombolBack)?.addEventListener('click', () => {
+                wadah.scrollBy({ left: -220, behavior: 'smooth' });
+            });
+            document.querySelector(tombolNext)?.addEventListener('click', () => {
+                wadah.scrollBy({ left: 220, behavior: 'smooth' });
+            });
+        }
+
+        pasangPanah('.back', '.next', '.highlight-wrapper');
+        pasangPanah('.back-menus', '.next-menus', '.filter-wrapper');
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="huhu,js"></script>
+</body>
+</html>
